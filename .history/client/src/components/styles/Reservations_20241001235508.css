@@ -1,0 +1,29 @@
+.form {
+    background-color: #16325B;
+    padding: 20px;
+  }
+  
+  .input {
+    width: 80%;
+   margin-left:150px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 2px 2px #16325B;
+  }
+  
+  .submitButton {
+    background-color: #16325B;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 500px;
+    margin-bottom: 30px;
+  }
+  

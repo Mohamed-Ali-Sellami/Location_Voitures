@@ -1,0 +1,31 @@
+import React from 'react'
+import './styles/Navbar.css'
+import { Link } from 'react-router-dom'
+import imagelogo from "./images/logo.png"
+const Navbar = () => {
+  return (
+    <div>
+       <header>
+        <div className="logo">  
+        <img src={imagelogo} alt="logo"/>  
+         </div>
+
+        <div className="contact"> <i class="fa-brands fa-whatsapp"></i>  (+216)  56 751 909</div>
+    </header>
+    
+    <nav>
+        <ul>
+        <Link to="/"><li>Accueil</li> </Link>
+            <Link to="/voitures">  <li>Véhicules</li></Link>
+            <Link to="/tarifs"> <li>Tarifs</li> 
+         <Link to="/agences"> <li>Agences</li></Link>
+            <li>Contact</li>
+            <Link to="/login"><li>Espace client</li></Link>
+        </ul>
+    </nav>
+
+    </div>
+  )
+}
+
+export default Navbar

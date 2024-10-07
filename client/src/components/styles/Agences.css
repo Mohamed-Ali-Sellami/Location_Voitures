@@ -1,0 +1,37 @@
+.contentagences {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+.titleagences {
+    background-color: #16325B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.containeragences {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0px;
+   
+}
+.contentagences {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   
+   
+}
+h2 {
+    color: #16325B;
+}
+.agency {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+}
+.contact-infoagences {
+    margin-top: 10px;
+}

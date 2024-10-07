@@ -1,0 +1,33 @@
+.boxcars {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+.contentcars {
+
+    padding-top:  150px;
+    
+
+}
+
+.contentcars h1 {
+align-items: center;
+text-align: center;
+
+
+}
+.titlecars{
+    text-align: center;
+    padding-top: 30px;
+    
+}
+.boxcarone {
+    text-align: center;
+    align-items: center;
+}

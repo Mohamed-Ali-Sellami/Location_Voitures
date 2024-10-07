@@ -1,0 +1,48 @@
+header {
+    background-color: #F5F5F5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+nav {
+    background-color: #16325B;
+    color: white;
+   
+}
+.logo h1 span {
+font-weight: bold;
+}
+.logo img {
+    height: 240px;
+    width:300px;
+    padding: 25px;
+    font-size: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: c;
+}
+nav ul li {
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+   
+}
+.logo {
+    font-weight: bold;
+}
+
+.logo span {
+    color: #16325B;
+    height: 20px;
+    font-size: 40px;
+}
+.contact {
+    font-weight: bold;
+    font-size: 30px;
+}

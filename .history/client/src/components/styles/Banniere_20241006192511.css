@@ -1,0 +1,51 @@
+.car-image{
+  width: 100%;
+  height: 100%;}
+
+.car-image img {
+    width: 100%;
+    height: 80vh;   
+    object-fit: cover;
+    
+    
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 ;
+  }
+
+  .inputbanner {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    flex-grow: 1;
+    padding: 10px;
+    padding-bottom: 10px;
+    height: 10px;
+  }
+
+  .search-container button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .banner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+  }
+  .banner h1 {
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
