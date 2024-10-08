@@ -76,7 +76,7 @@ const Reservation = () => {
   console.log(params.id);
 
   const allcars = useSelector((store) => store.car?.car);
-  const user = useSelector((store) => store.user?.user);
+  const user = useSelector((store) => store.client?.client);
 
   const carreserver = allcars?.filter((data) => data._id === params.id);
   console.log(carreserver);
@@ -97,7 +97,7 @@ const Reservation = () => {
   // Utilisation d'un useEffect pour recalculer le prix total lorsque les dates changent
   useEffect(() => {
     if (startDate && endDate && carreserver.length > 0) {
-      const pricePerDay = carreserver[0]?.price_per_day; // Prix par jour extrait de la voiture réservée
+      const pricePerDay = carreserver[0]?.price; // Prix par jour extrait de la voiture réservée
       const days = calculateDays(startDate, endDate);
       setTotalPrice(days * pricePerDay); // Calcul du prix total
     }
@@ -131,7 +131,7 @@ const Reservation = () => {
             />
 
             <h3>Total Price:</h3>
-            <input type="text" value={totalPrice ? `${totalPrice} TND` : '0 TND'} readOnly />
+            <input type="text" value={totalPrice ? `${totalPrice} €` : '0 €'} readOnly />
           </div>
         ))}
 

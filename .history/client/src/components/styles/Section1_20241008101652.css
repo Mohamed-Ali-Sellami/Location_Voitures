@@ -73,4 +73,42 @@ h1, h2 {
     width: 100%;
     font-weight: bold;
 }
-
+@media screen and (max-width: 768px) {
+    /* règles pour les écrans de tablettes et smartphones */
+    .container {
+      max-width: 100%;
+      padding: 20px;
+    }
+    .car-grid {
+      grid-template-columns: 1fr;
+    }
+    .car-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* règles pour les écrans de smartphones */
+    .container {
+      padding: 10px;
+    }
+    .car-grid {
+      grid-template-columns: 1fr;
+    }
+    .car-card {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    /* règles pour les écrans de smartphones très petits */
+    .container {
+      padding: 5px;
+    }
+    .car-grid {
+      grid-template-columns: 1fr;
+    }
+    .car-card {
+      margin-bottom: 5px;
+    }
+  }

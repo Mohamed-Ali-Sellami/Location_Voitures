@@ -34,7 +34,7 @@ const Cart = ({data}) => {
                  
                   <p className='dispo' style={{background:"green"}}>Disponible</p>
               :
-                  <p className='dispo' style={{background:"red"}}>Reservée</p>
+                  <p className='dispo' style={{background:"red"}}>Reserbé</p>
               }
               
                      

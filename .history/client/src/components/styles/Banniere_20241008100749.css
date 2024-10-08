@@ -48,13 +48,4 @@
     font-weight: bold;
     margin-bottom: 20px;
   }
-
-  @media screen and (max-width: 400px) {
-    .banner h1 {
-      font-size: 4rem;
-    }
   
-    .banner p {
-      font-size: 1.5rem;
-    }
-  }

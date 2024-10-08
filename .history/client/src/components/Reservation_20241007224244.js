@@ -131,7 +131,7 @@ const Reservation = () => {
             />
 
             <h3>Total Price:</h3>
-            <input type="text" value={totalPrice ? `${totalPrice} TND` : '0 TND'} readOnly />
+            <input type="text" value={totalPrice ? `${totalPrice} €` : '0 €'} readOnly />
           </div>
         ))}
 

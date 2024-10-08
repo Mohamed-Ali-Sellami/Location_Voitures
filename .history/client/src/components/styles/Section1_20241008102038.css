@@ -74,3 +74,34 @@ h1, h2 {
     font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .car-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .car-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .car-image {
+        height: 150px;
+    }
+}
