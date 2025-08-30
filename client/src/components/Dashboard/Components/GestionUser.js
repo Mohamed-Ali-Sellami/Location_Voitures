@@ -41,7 +41,7 @@ const GestionUser = () => {
                                 <td data-label="settings">
 
                     <div className='settingsadmin'>
-                    <button className='deletebtn' onClick={() => (dispatch(deleteuser(data?._id)))}> Delete</button>
+                    {/* <button className='deletebtn' onClick={() => (dispatch(deleteuser(data?._id)))}> Delete</button> */}
 
 
                     <button className='updatebtn' onClick={()=> setshowthird(!showthird)}> Update</button>

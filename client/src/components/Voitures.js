@@ -2,6 +2,7 @@ import React from 'react'
 import './styles/Voitures.css'
 import { useSelector } from 'react-redux'
 import Cart from './Cart'
+import Navbarpages from './Navbarpages'
 
 
 const Voitures = () => {
@@ -10,6 +11,8 @@ const allcars=useSelector((store)=>store.car?.car)
 console.log("voila les cars",allcars)
 
   return (
+    <>
+    <Navbarpages/>
     <div>
 
       <div className='boxcarone'>
@@ -26,6 +29,7 @@ console.log("voila les cars",allcars)
       </div>
       </div>
     </div>
+    </>
   )
 }
 

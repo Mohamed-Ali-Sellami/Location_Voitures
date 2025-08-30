@@ -29,20 +29,8 @@ const Section1 = () => {
                     <button class="reservation-btn"> RÉSERVATION</button>
                 </div>
             </div>
-            <div class="car-card">
-                <img src={image2} alt="VOLKSWAGEN POLO" class="car-image"/>
-                <div class="car-name">SEAT IBIZA</div>
-                <div class="car-price">
-                <p> Prix comprend : <br/>
-                - Kilométrage illimité<br/>
-                           - Assurance au tiers<br/>
-                           - Surcharge Aéroport/Gare<br/>
-                           - Caution : 20 TND </p>
-                    <p class="price-label">Prix à partir de</p>
-                    <p class="price">80 TND<span>/jour</span></p>
-                    <button class="reservation-btn"> RÉSERVATION</button>
-                </div>
-            </div>
+            
+            
             <div class="car-card">
                 <img src={image3} alt="cupra leon" class="car-image"/>
                 <div class="car-name">CUPRA LEON</div>

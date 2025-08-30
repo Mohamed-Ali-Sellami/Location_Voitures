@@ -1,3 +1,4 @@
+/* Styles de base */
 header {
     background-color: #F5F5F5;
     padding: 10px;
@@ -6,34 +7,46 @@ header {
     align-items: center;
     height: 120px;
 }
+
 nav {
     background-color: #16325B;
     color: white;
     display: flex;
     justify-content: space-around;
-   
+    position: relative;
 }
+
 .logo h1 span {
-font-weight: bold;
+    font-weight: bold;
 }
+
 .logo img {
     height: 240px;
-    width:300px;
+    width: 300px;
     padding: 25px;
     font-size: 20px;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
+    width: 50%;
 }
+
 nav ul li {
     padding: 15px 20px;
     color: white;
     text-decoration: none;
-   
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+nav ul li:hover {
+    background-color: #0f1f3d;
+}
+
 .logo {
     font-weight: bold;
 }
@@ -43,7 +56,154 @@ nav ul li {
     height: 20px;
     font-size: 40px;
 }
+
 .contact {
     font-weight: bold;
     font-size: 30px;
+}
+
+/* Menu hamburger pour mobile */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Media Queries pour Tablettes */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 100px;
+        padding: 5px;
+    }
+    
+    .logo img {
+        height: 180px;
+        width: 220px;
+        padding: 15px;
+    }
+    
+    .contact {
+        font-size: 24px;
+    }
+    
+    nav ul li {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Media Queries pour Mobile */
+@media screen and (max-width: 768px) {
+    header {
+        height: 80px;
+        padding: 10px 15px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    
+    .logo img {
+        height: 120px;
+        width: 150px;
+        padding: 10px;
+    }
+    
+    .contact {
+        font-size: 16px;
+        text-align: right;
+        flex: 1;
+    }
+    
+    .contact i {
+        margin-right: 5px;
+    }
+    
+    nav {
+        justify-content: flex-end;
+        padding: 0 15px;
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #16325B;
+        flex-direction: column;
+        display: none;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+        width: 100%;
+    }
+    
+    nav ul.mobile-menu-open {
+        display: flex;
+    }
+    
+    nav ul li {
+        padding: 15px 20px;
+        border-bottom: 1px solid #0f1f3d;
+        text-align: center;
+        width: 100%;
+    }
+    
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Media Queries pour très petits écrans */
+@media screen and (max-width: 480px) {
+    header {
+        height: 70px;
+        padding: 5px 10px;
+    }
+    
+    .logo img {
+        height: 80px;
+        width: 100px;
+        padding: 5px;
+    }
+    
+    .contact {
+        font-size: 12px;
+    }
+    
+    nav ul li {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Styles pour les liens */
+nav ul a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
+nav ul a:hover {
+    text-decoration: none;
+}
+
+/* Animation pour le menu mobile */
+@media screen and (max-width: 768px) {
+    nav ul {
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    
+    nav ul.mobile-menu-open {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -1,8 +1,11 @@
 import React from 'react'
 import './styles/ContactUs.css'
+import Navbarpages from './Navbarpages'
 
 const ContactUs = () => {
   return (
+    <>
+    <Navbarpages/>
     <div className="contact-container">
     <h1 className="contact-title">Contact Us</h1>
     <form>
@@ -36,6 +39,7 @@ const ContactUs = () => {
       <button type="submit">Send Message</button>
     </form>
   </div>
+  </>
   )
 }
 

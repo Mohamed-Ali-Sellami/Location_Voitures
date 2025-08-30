@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { userLogin } from "../JS/userSlice";
+import logoo from './images/logo.png'
+import './styles/Login.css'
 
 const Login = () => {
   const [login, setlogin] = useState({
@@ -16,7 +18,8 @@ const Login = () => {
     <div>
       <div className="wrapper">
         <form onSubmit={(e) => e.preventDefault()} className="form-signin">
-          <h2 className="form-signin-heading">Please login</h2>
+          <img src= {logoo} alt="imglogo" />
+          <h2 className="form-signin-heading">Login</h2>
           <input
             type="text"
             className="form-control"

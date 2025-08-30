@@ -1,10 +1,11 @@
 import React from 'react'
 import './styles/Taarifs.css'
+import Navbarpages from './Navbarpages'
 
 const Taarifs = () => {
   return (
     <div>
-
+<Navbarpages/>
 <div className='bodytaarifs'>
     <div className="headertaarifs">
         <h1>Nos Tarifs de Location</h1>

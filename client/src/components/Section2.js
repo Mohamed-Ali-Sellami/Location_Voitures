@@ -6,7 +6,7 @@ import img3 from './images/siegebebe.jpg'
 
 const Section2 = () => {
   return (
-    <div class="section2">
+    <div className="section2">
 
 <h1><span>Nos Produits</span> et services</h1>
     <p class="subtitle">Pour vos locations de voitures en Tunisie, SELLAMI cars vous propose plusieurs produits et services adaptés à vos besoins.</p>

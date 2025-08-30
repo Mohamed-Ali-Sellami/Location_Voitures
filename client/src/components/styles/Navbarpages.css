@@ -1,0 +1,39 @@
+/* ===== Navbar Pages ===== */
+.navbar-pages {
+  display: flex;
+  justify-content: space-between; /* liens à gauche / logo à droite */
+  align-items: center;
+  padding: 12px 40px;
+  background-color: #0b2d5c; /* ajoute une couleur de fond cohérente */
+}
+
+/* Liens */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links li {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #c49b63; /* effet hover doré */
+}
+
+
+.logo h2 {
+    color: white;
+    font-weight: bold;
+}

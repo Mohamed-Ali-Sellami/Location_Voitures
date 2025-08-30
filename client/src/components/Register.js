@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { userRegister } from "../JS/userSlice";
-
+import logoo from './images/logo.png'
+import './styles/Register.css'
 const Register = () => {
   const [register, setregister] = useState({
     name: "",
@@ -15,7 +16,8 @@ const Register = () => {
     <div>
       <div className="wrapper">
         <form onSubmit={(e) => e.preventDefault()} className="form-signin">
-          <h2 className="form-signin-heading">Please register</h2>
+           <h2 className="form-signin-heading">Register</h2>
+          <Link to="/"> <img src= {logoo} alt="imglogo"  className="imglogoregister"/>  </Link>
           <input
             type="text"
             className="form-control"

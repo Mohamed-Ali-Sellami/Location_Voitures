@@ -1,0 +1,105 @@
+/* === Global Wrapper === */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f6f9; /* gris clair pro */
+  padding: 20px;
+}
+
+/* === Formulaire === */
+.form-signin {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* === Titre === */
+.form-signin-heading {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* === Inputs === */
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #16325B;
+  outline: none;
+}
+
+/* === Checkbox === */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+/* === Bouton === */
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #16325B;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0f2342;
+}
+
+/* === Lien vers Register === */
+.form-signin a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #16325B;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.form-signin a:hover {
+  text-decoration: underline;
+}
+
+/* === Responsive === */
+@media (max-width: 480px) {
+  .form-signin {
+    padding: 20px 15px;
+  }
+
+  .form-signin-heading {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

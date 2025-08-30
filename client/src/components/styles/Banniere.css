@@ -1,60 +1,286 @@
-.car-imageb{
+/* Styles de base */
+.car-imageb {
   width: 100%;
-  height: 100%;}
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
 
 .car-imageb img {
-    width: 100%;
-    height: 80vh;   
-    object-fit: cover;
-    
+  width: 100%;
+  height: 80vh;   
+  object-fit:cover;
+  display: block;
+  opacity: 0.85;
+}
+
+.banner {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50%;
+  z-index: 10;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  line-height: 1.1;
 }
 
 .search-container {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 0 ;
-  }
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 100%);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50px;
 
-  .inputbanner {
-    border: none;
-    outline: none;
-    font-size: 20px;
-    flex-grow: 1;
-    padding: 10px;
-    padding-bottom: 10px;
-    height: 10px;
-  }
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  position: relative;
+}
 
-  .search-container button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
+.inputbanner {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  flex-grow: 1;
+  padding: 10px 40px 10px 20px; /* 20px à gauche pour décaler le texte */
+  border-radius: 50px;
+  background: transparent;
+  color: #333;
+  font-weight: 500;
+  width: 100%;
+}
+
+
+.inputbanner::placeholder {
+ 
+  color: #666;
+  font-weight: 400;
+
+
+}
+
+.search-container button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #16325B;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.search-container button:hover {
+  color: #0f1f3d;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.search-container button i {
+  font-size: 20px;
+}
+
+/* Media Queries pour Tablettes (1024px et moins) */
+@media screen and (max-width: 1024px) {
   .banner {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 50%;
+    width: 60%;
+    top: 50%;
   }
+  
   .banner h1 {
-    color: white;
-    font-size: 6rem;
-    font-weight: bold;
+    font-size: 4.5rem;
+    margin-bottom: 25px;
+  }
+  
+  .search-container {
+    max-width: 500px;
+    padding: 5px 20px;
+  }
+  
+  .inputbanner {
+    font-size: 16px;
+    padding: 15px 40px 15px 0px;
+  }
+  
+  .search-container button {
+    right: 20px;
+  }
+  
+  .search-container button i {
+    font-size: 18px;
+  }
+}
+
+/* Media Queries pour Tablettes Portrait (768px et moins) */
+@media screen and (max-width: 768px) {
+  .car-imageb img {
+    height: 70vh;
+  }
+  
+  .banner {
+    width: 80%;
+    top: 50%;
+  }
+  
+  .banner h1 {
+    font-size: 3.5rem;
     margin-bottom: 20px;
   }
-
-  @media screen and (max-width: 400px) {
-    .banner h1 {
-      font-size: 4rem;
-    }
   
-    .banner p {
-      font-size: 1.5rem;
-    }
+  .search-container {
+    max-width: 450px;
+    border-radius: 40px;
+    padding: 5px 18px;
   }
+  
+  .inputbanner {
+    font-size: 16px;
+    padding: 15px 35px 15px 0px;
+  }
+  
+  .search-container button {
+    right: 18px;
+  }
+  
+  .search-container button i {
+    font-size: 16px;
+  }
+}
+
+/* Media Queries pour Mobile (480px et moins) */
+@media screen and (max-width: 480px) {
+  .car-imageb img {
+    height: 60vh;
+  }
+  
+  .banner {
+    width: 90%;
+    top: 50%;
+    padding: 0 10px;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  
+  .search-container {
+    max-width: 100%;
+    border-radius: 35px;
+    padding: 5px 15px;
+  }
+  
+  .inputbanner {
+    font-size: 14px;
+    padding: 12px 30px 12px 0px;
+  }
+  
+  .search-container button {
+    right: 15px;
+  }
+  
+  .search-container button i {
+    font-size: 14px;
+  }
+}
+
+/* Media Queries pour très petits écrans (400px et moins) */
+@media screen and (max-width: 400px) {
+  .car-imageb img {
+    height: 50vh;
+  }
+  
+  .banner {
+    width: 95%;
+    top: 50%;
+  }
+  
+  .banner h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .search-container {
+    border-radius: 30px;
+    padding: 5px 12px;
+  }
+  
+  .inputbanner {
+    font-size: 13px;
+    padding: 10px 25px 10px 0px;
+  }
+  
+  .search-container button {
+    right: 12px;
+  }
+  
+  .search-container button i {
+    font-size: 12px;
+  }
+}
+
+/* Media Queries pour écrans très larges (1200px et plus) */
+@media screen and (min-width: 1200px) {
+  .banner h1 {
+    font-size: 7rem;
+  }
+  
+  .search-container {
+    max-width: 700px;
+    padding: 5px 30px;
+  }
+  
+  .inputbanner {
+    font-size: 20px;
+    padding: 20px 50px 20px 0px;
+  }
+  
+  .search-container button {
+    right: 30px;
+  }
+  
+  .search-container button i {
+    font-size: 22px;
+  }
+}
+
+/* Animation au survol pour améliorer l'UX */
+.banner h1 {
+  transition: transform 0.3s ease;
+}
+
+.banner:hover h1 {
+  transform: scale(1.02);
+}
+
+.search-container {
+  transition: all 0.3s ease;
+}
+
+.search-container:focus-within {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+  transform: translateY(-3px);
+  border-color: rgba(22, 50, 91, 0.5);
+}
+
+.search-container:focus-within button {
+  color: #16325B;
+  transform: translateY(-50%) scale(1.15);
+}

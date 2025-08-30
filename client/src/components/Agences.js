@@ -1,9 +1,11 @@
 import React from 'react'
 import './styles/Agences.css'
+import Navbarpages from './Navbarpages'
 
 const Agences = () => {
   return (
-
+<>
+<Navbarpages/>
     <div className='contentagences'>
 
     <div className='titleagences'>
@@ -42,6 +44,7 @@ const Agences = () => {
         </div>
     </div>
     </div>
+    </>
   )
 }
 

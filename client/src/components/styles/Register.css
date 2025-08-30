@@ -1,0 +1,110 @@
+/* === Global Wrapper === */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f6f9; /* fond gris clair */
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* === Formulaire === */
+.form-signin {
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* === Logo === */
+.imglogoregister {
+  width: 70px;
+  margin: 10px 0 20px 0;
+}
+
+/* === Titre === */
+.form-signin-heading {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* === Inputs === */
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #16325B;
+  outline: none;
+  box-shadow: 0 0 4px rgba(22, 50, 91, 0.3);
+}
+
+/* === Bouton === */
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #16325B;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0f2342;
+}
+
+/* === Texte + Lien === */
+h5 {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #444;
+  font-weight: normal;
+}
+
+h5 a {
+  color: #16325B;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+h5 a:hover {
+  text-decoration: underline;
+}
+
+/* === Responsive === */
+@media (max-width: 480px) {
+  .form-signin {
+    padding: 25px 15px;
+  }
+
+  .form-signin-heading {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .imglogoregister {
+    width: 55px;
+  }
+}
